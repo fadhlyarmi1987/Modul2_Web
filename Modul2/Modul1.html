@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penjumlahan Bilangan</title>
+  </head>
+  <body>
+    <h1>Operasi Penjumlahan Bilangan</h1>
+
+    <label for="kolom1">Bilangan 1:</label>
+    <input type="text" id="kolom1" />
+
+    <label for="kolom2">Bilangan 2:</label>
+    <input type="text" id="kolom2" /><br /><br />
+
+    <button onclick="penjumlahan">Hitung</button>
+    <button onclick="ulang">Ulang</button>
+
+    <script>
+      function penjumlahan() {
+        var kolom1 = parseFloat(document.getElementById("kolom1").value);
+        var kolom2 = parseFloat(document.getElementById("kolom2").value);
+
+        var hasil = kolom1 + kolom2;
+        alert("Hasil penjumlahan: " + hasil);
+      }
+
+      function ulang() {
+        document.getElementById("kolom1").value = "";
+        document.getElementById("kolom2").value = "";
+      }
+    </script>
+  </body>
+</html>
